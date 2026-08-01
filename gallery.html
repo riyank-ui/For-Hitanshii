@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hi-EN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hitanshiii Ki Memories ✨</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="gallery-body">
+
+  <nav class="navbar">
+    <a href="index.html">⬅️ Back</a>
+    <span class="nav-title">Hitanshiii Jiiii's Arcade 🕹️</span>
+    <a href="letter.html">Next Page ➡️</a>
+  </nav>
+
+  <div class="gallery-container">
+    <h1 class="main-title">Humare Kuch Pyaare Moments... 🥰</h1>
+    <p class="subtitle">(Click default cards to see the memory!)</p>
+
+    <div class="card-grid">
+
+      <!-- MEMORY CARD 1 (Replace IMAGE_URL_HERE) -->
+      <div class="memory-card" onclick="flipCard(this)">
+        <div class="card-front">
+          <!-- 👉 YAHAN APNI PHOTO 1 KA LINK DALO -->
+          <img src="IMAGE_URL_HERE_1" alt="Hitanshi Memory 1">
+        </div>
+        <div class="card-back Hinglish">
+          <h3>Vo Din... 🥺</h3>
+          <p>Mujhe aaj bhi yaad hai jab tumne pehli baar aise smile kiya tha. My heart melted! ❤️</p>
+        </div>
+      </div>
+
+      <!-- MEMORY CARD 2 (Replace IMAGE_URL_HERE) -->
+      <div class="memory-card" onclick="flipCard(this)">
+        <div class="card-front">
+          <!-- 👉 YAHAN APNI PHOTO 2 KA LINK DALO -->
+          <img src="IMAGE_URL_HERE_2" alt="Hitanshi Memory 2">
+        </div>
+        <div class="card-back Hinglish">
+          <h3>Date Night ✨</h3>
+          <p>Kuch bhi kaho, matching outfits mein tum killer lag rahi thi! Best. Evening. Ever.</p>
+        </div>
+      </div>
+
+      <!-- MEMORY CARD 3 (Replace IMAGE_URL_HERE) -->
+      <div class="memory-card" onclick="flipCard(this)">
+        <div class="card-front">
+          <!-- 👉 YAHAN APNI PHOTO 3 KA LINK DALO -->
+          <img src="IMAGE_URL_HERE_3" alt="Hitanshi Memory 3">
+        </div>
+        <div class="card-back Hinglish">
+          <h3>My Cutieee 😍</h3>
+          <p>Yeh pose! 😂 Bas isi playful side pe toh main fida hoon, Hitanshiii Jiiii.</p>
+        </div>
+      </div>
+
+    </div> <!-- grid end -->
+  </div> <!-- container end -->
+
+  <script>
+    // Simple card flip effect toggler
+    function flipCard(cardElement) {
+      cardElement.classList.toggle('flipped');
+    }
+  </script>
+</body>
+</html>
