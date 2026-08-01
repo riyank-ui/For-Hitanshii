@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hi-EN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hitanshiii Jiiii's Secret 🔒</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="landing-body">
+
+  <div class="lock-container">
+    <div class="emoji-header">💖🗝️💖</div>
+    <h1>Welcome, Hitanshiii Jiiii!</h1>
+    <p>Iss security check ko pass karo humare vault mein enter karne ke liye...</p>
+
+    <div class="question-box">
+      <h2>Kya tum world ki sabse pyaari aur beautiful ladki ho? 🤔</h2>
+    </div>
+
+    <div class="btn-group">
+      <!-- Click isse and you enter the site -->
+      <a href="gallery.html" class="yes-btn">Haa, Bilkul! ✅</a>
+      
+      <!-- Yeh button move karega cursor aate hi -->
+      <button class="no-btn" id="runawayBtn" onmouseover="bhagBhootBhag()">Nahi ❌</button>
+    </div>
+  </div>
+
+  <script>
+    // Playful Runaway Button Function
+    function bhagBhootBhag() {
+      const btn = document.getElementById('runawayBtn');
+      // Screen size limits detect karo
+      const maxX = window.innerWidth - btn.offsetWidth - 50;
+      const maxY = window.innerHeight - btn.offsetHeight - 50;
+      
+      // Random new positions calculate karo
+      const randomX = Math.floor(Math.random() * maxX);
+      const randomY = Math.floor(Math.random() * maxY);
+      
+      // CSS apply karo
+      btn.style.position = 'absolute';
+      btn.style.left = randomX + 'px';
+      btn.style.top = randomY + 'px';
+    }
+  </script>
+</body>
+  </html>
+  
